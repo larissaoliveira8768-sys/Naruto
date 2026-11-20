@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cofa1tv7gv5x4"]
+
+[ext_resource type="Texture2D" uid="uid://dlpod7r0s7vlj" path="res://Sakuraframe.png" id="1_bikww"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_es2mj"]
+radius = 15.0
+height = 78.0
+
+[node name="Sakura" type="CharacterBody2D" unique_id=468560958]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1830237858]
+texture = ExtResource("1_bikww")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=906294035]
+shape = SubResource("CapsuleShape2D_es2mj")
+disabled = true
+debug_color = Color(0, 0.6, 0.69803923, 0.05882353)

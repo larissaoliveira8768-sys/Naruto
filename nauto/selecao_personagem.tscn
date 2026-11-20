@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://bhv0egp7t58tf"]
+
+[ext_resource type="Script" uid="uid://dwcjhullbvabq" path="res://selecao_personagem.gd" id="1_l080w"]
+
+[node name="SelecaoPersonagem" type="Control" unique_id=1989129451]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_l080w")
+
+[node name="BG" type="TextureRect" parent="." unique_id=203305690]
+layout_mode = 0
+offset_right = 1154.0
+offset_bottom = 646.0
+
+[node name="Label" type="Label" parent="." unique_id=435717293]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -445.0
+offset_right = 447.0
+offset_bottom = 103.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 75
+text = "Escolha seu personagem"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=501726247]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -339.0
+offset_top = -61.0
+offset_right = 326.0
+offset_bottom = 31.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 30
+
+[node name="naruto" type="Button" parent="VBoxContainer" unique_id=740747007]
+layout_mode = 2
+text = "Naruto"
+
+[node name="Sakura" type="Button" parent="VBoxContainer" unique_id=1924962166]
+layout_mode = 2
+text = "Sakura"
+
+[node name="voltar" type="Button" parent="VBoxContainer" unique_id=303974961]
+layout_mode = 2
+text = "voltar
+"

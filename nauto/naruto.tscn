@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cytnluvc7x0il"]
+
+[ext_resource type="Texture2D" uid="uid://eicpngd4keyk" path="res://narutoframe.png" id="1_iajtv"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_gxb6x"]
+radius = 71.0
+height = 150.0
+
+[node name="Naruto" type="CharacterBody2D" unique_id=1241212384]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1340429449]
+position = Vector2(9.000004, -33)
+scale = Vector2(3.031915, 1.7987013)
+texture = ExtResource("1_iajtv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1143576525]
+position = Vector2(-2, -38)
+shape = SubResource("CapsuleShape2D_gxb6x")
+disabled = true
+debug_color = Color(0, 0.6, 0.69803923, 0.10980392)
